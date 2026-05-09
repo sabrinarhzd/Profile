@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrina Portfolio</title>
+</head>
+<body>
+    <style>
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+    </style>
+
+    <section id="home">
+        <div>
+            <h1>MY PORTFOLIO</h1>
+        </div>
+        <nav>
+
+                <button onclick="showPage('github')">GITHUB</button>
+                <button onclick="showPage('linkedin')">LINKEDIN</button>
+            </nav>
+
+        </nav>
+
+        <div>
+            <img src="/Users/husnaruhaizad/Downloads/IMG_1591.JPG" alt="Logo" width="600" height="800" >
+            
+            <p>My name is Sabrina, and I am a creative and adventurous person who loves exploring new experiences. I enjoy photography, traveling, and discovering different cultures because they help me learn more about the world. In my free time, I like listening to music, watching movies, ad spending time with friends and family..</p>
+        </div>
+    </section>
+
+    <section id="github" style="display: none;">
+        <div>
+            <button onclick="showPage('home')">BACK</button>
+            <h1>GITHUB</h1>
+        </div>
+        
+        <div>
+            <h3>Repository</h3>
+            <img id="home" src="/Users/husnaruhaizad/Desktop/Screenshot 2026-05-09 at 3.00.30 PM.png" width="1080" height="566">
+    
+        </div>
+    </section>
+
+    <section id="linkedin" style="display: none;">
+        <div>
+            <button onclick="showPage('home')">BACK</button>
+            <h1>LINKEDIN</h1>
+        </div>
+        
+        <div>
+            <h3>Experience</h3>
+            <img id="home" src="/Users/husnaruhaizad/Desktop/Screenshot 2026-05-09 at 2.57.19 PM.png" width="1080" height="566">
+              
+            <h3>Education</h3>
+            <img id="home" src="/Users/husnaruhaizad/Desktop/Screenshot 2026-05-09 at 2.55.54 PM.png" width="1080" height="566">
+
+            <h3>Skills</h3>
+            <img id="home" src="/Users/husnaruhaizad/Desktop/Screenshot 2026-05-09 at 2.58.30 PM.png" width="1080" height="566">
+
+              
+        </div>
+    </section>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all sections
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('github').style.display = 'none';
+            document.getElementById('linkedin').style.display = 'none';
+            
+            // Show the selected section
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
